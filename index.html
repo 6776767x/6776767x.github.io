@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SteamBoost is now HourIdler</title>
+  <meta name="description" content="SteamBoost has moved to HourIdler.com.">
+  <style>
+    :root {
+      --bg: #101214;
+      --bg-raise: #16191d;
+      --text: #e8ecef;
+      --text-dim: #8b949e;
+      --accent: #66c0f4;       /* Steam client blue */
+      --accent-deep: #1a9fff;
+      --gold: #c5a248;
+      --border: #232830;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body { height: 100%; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      max-width: 520px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 7vw, 3.2rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      margin-bottom: 16px;
+    }
+
+    h1 .new-name { color: var(--accent); }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: var(--text-dim);
+      margin-bottom: 40px;
+    }
+
+    .cta {
+      display: inline-block;
+      width: 100%;
+      max-width: 360px;
+      padding: 18px 32px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      color: #0b0d0f;
+      background: linear-gradient(180deg, var(--accent) 0%, var(--accent-deep) 100%);
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 120ms ease, box-shadow 120ms ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(26, 159, 255, 0.25);
+    }
+
+    .cta:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .url {
+      display: block;
+      margin-top: 16px;
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      font-variant-numeric: tabular-nums;
+    }
+
+    footer {
+      margin-top: 56px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 0.8rem;
+      color: var(--text-dim);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .cta { transition: none; }
+      .cta:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>We&rsquo;ve moved to <span class="new-name">HourIdler</span></h1>
+    <p>SteamBoost is now HourIdler. Your favorite hour boosting service has a new home.</p>
+    <a class="cta" href="https://houridler.com">Go to HourIdler.com</a>
+    <span class="url">houridler.com - bookmark the new address</span>
+    <footer>This page does not redirect automatically. steamboost.xyz is no longer maintained.</footer>
+  </main>
+</body>
+</html>
